@@ -11,23 +11,23 @@
 </head>
 <body>
     <div class="container">
-        <form >
-            <fieldset class="form-group">Name: <input type="text" id="firstName" class="form-control"></fieldset>
+        <form>
+            <fieldset class="form-group">First name: <input type="text" id="firstName" class="form-control"></fieldset>
             <fieldset class="form-group">Surname: <input type="text" id="surname" class="form-control"></fieldset>
             <fieldset class="form-group">Working experience: <input type="text" id="wyears" class="form-control"></fieldset>
-            <fieldset class="form-group">Education: 
-                    <select id="education" class="form-control">
-                        <option value="faculty">Faculty</option>
-                        <option value="college">College</option>
-                        <option value="school">High school</option>
-                    </select><br>
+            <fieldset class="form-group">Education:
+                <select id="education" class="form-control">
+                    <option value="faculty">Faculty</option>
+                    <option value="college">College</option>
+                    <option value="school">High school</option>
+                </select><br>
             </fieldset>
-       
-        <input type="button" value="Add worker" onclick="addWorker()" class="btn btn-succes">
-        <input type="button" value="Show workers" onclick="showWorkers()" class="btn btn-succes">
+
+            <input type="button" value="Add worker" onclick="addWorker()" class="btn btn-succes">
+            <input type="button" value="Show workers" onclick="showWorkers()" class="btn btn-succes">
 
         </form>
-    <div id = "workers"></div>
+        <div id="workers"></div>
     </div>
 
     
