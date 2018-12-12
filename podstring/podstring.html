@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Podstring</title>
+</head>
+<body>
+    <script>
+        
+        function brojPodstringove(podstring, s) {
+            let brojacS = 0;
+            
+            if (podstring.length > s.length || podstring === '' || s === '') {
+                return 0;
+            } else {
+                for (let i = 0; i <= s.length - podstring.length; i++) {
+                    if (s.substring(i, i + podstring.length) === podstring) {
+                        brojacS ++;
+                    }
+                } 
+                return brojacS;     
+            }
+              
+        }
+        alert (brojPodstringove('ana', 'Moja nana je Ana'));  // 1
+        alert (brojPodstringove('',''));                      // 0
+        alert (brojPodstringove('ana', 'a'));                 // 0
+        alert (brojPodstringove('a', 'Moja nana je Ana'));    // 4
+
+    </script>
+    
+</body>
+</html>
