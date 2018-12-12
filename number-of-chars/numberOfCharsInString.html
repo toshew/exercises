@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Broj karaktera u stringu</title>
+</head>
+<body>
+        String:<input type="text" id="str">
+        Karakter:<input type="text" id="karakter">
+        <input type="button" onclick="brojKaraktera()" value="Broj karaktera">
+        
+
+    <script>
+       function brojKaraktera() {
+        let brojKar = 0;
+        let str = document.getElementById('str').value.toLowerCase();
+        let karakter = document.getElementById('karakter').value.toLowerCase();
+
+       if (karakter.length > 1 || karakter.length < 1) {
+           return alert(`Morate uneti iskljucivo jedan karakter!`);
+       }
+       
+       for(let i = 0; i < str.length; i++) {
+            if (karakter === str[i]) {
+                brojKar += 1;
+            }
+        }
+
+        return alert(`Broj karaktera u stringu je: ${brojKar}`); 
+       }
+
+    </script>
+</body>
+</html>
